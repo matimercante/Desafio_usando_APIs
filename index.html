@@ -1,35 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Desafio Usando APIs</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script async src="index.js"></script>
+  </head>
+  <body>
     <header class="header">
-        <div class="header-content">
-            <form class="shearch-form">
-                <input placeholder="Lavarropas..." type="text" class="search-input">
-                <button class="search-button">Buscar</button>
-            </form>
-        </div>
+      <div class="header-content">
+        <form class="shearch-form">
+          <input
+            placeholder="Lavarropas..."
+            type="text"
+            name="search"
+            class="search-input"
+          />
+          <button class="search-button">Buscar</button>
+        </form>
+      </div>
     </header>
     <div class="content">
-        <p class="results-count">Resultados: <span class="results-count">34341</span></p>
+      <template id="result-item-template">
+        <p class="results-count-text">
+          Resultados: <span class="results-count">34341</span>
+        </p>
         <div class="results-item">
-            <img class="results-img" src="https://imgs.search.brave.com/E6yjbyCu2id4AzH6MYYe3KXOUSty98xf_IggBrFD43s/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/Y2FzYWRlbGF1ZGlv/LmNvbS9JbWFnZS8w/LzQwMF80MDAtMF8w/LTQ3MC1MLUctNjcx/LTQxLmpwZw">
-            <div class="results-datos">
-                <h3 class="results-item-name">Nombre del producto</h3>
-                <p class="results-item-condition">Nuevo</p>
-                <p class="text">Vendidos: <span class="result-items-sellcount">34</span></p>
-            </div>
-            <p class="result-item-price">$1111</p>
+          <img
+            class="results-img"
+            src="https://imgs.search.brave.com/E6yjbyCu2id4AzH6MYYe3KXOUSty98xf_IggBrFD43s/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/Y2FzYWRlbGF1ZGlv/LmNvbS9JbWFnZS8w/LzQwMF80MDAtMF8w/LTQ3MC1MLUctNjcx/LTQxLmpwZw"
+          />
+          <div class="results-datos">
+            <h3 class="results-item-name">Nombre del producto</h3>
+            <p class="results-item-condition">Nuevo</p>
+            <p class="text">
+              Vendidos: <span class="result-items-sellcount">34</span>
+            </p>
+          </div>
+          <p class="result-item-price">$1111</p>
         </div>
+      </template>
     </div>
-</body>
+  </body>
 </html>
